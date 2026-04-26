@@ -1,96 +1,26 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سقطرى - جنة الأرض العذراء</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #27ae60;
-            --text-light: #ecf0f1;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.8; }
-        
-        /* قسم الهيدر */
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1578326457399-3b34dbbf23b8?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
-        header p { font-size: 1.5rem; max-width: 700px; }
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Dracaena_cinnabari_at_Diksam_Plateau.jpg" alt="دم الأخوين">
+    <div class="card-content">
+        <h3>شجرة دم الأخوين</h3>
+        <p>أيقونة الجزيرة، تتميز بشكلها المظلي المقلوب وسائلها الأحمر الفريد.</p>
+    </div>
+</div>
 
-        /* الأقسام العامة */
-        section { padding: 50px 10%; }
-        .section-title { text-align: center; color: var(--accent-color); margin-bottom: 40px; font-size: 2rem; }
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Arher_beach%2C_Socotra.jpg" alt="شواطئ سقطرى">
+    <div class="card-content">
+        <h3>شواطئ أرعر</h3>
+        <p>حيث تعانق الكثبان الرملية البيضاء مياه البحر الصافية في مشهد خيالي.</p>
+    </div>
+</div>
 
-        /* قسم الطبيعة - Grid */
-        .nature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card-content { padding: 20px; }
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Adenium_obesum_socotranum.jpg" alt="شجرة زجاجة الصحراء">
+    <div class="card-content">
+        <h3>شجرة زجاجة الصحراء</h3>
+        <p>نبات فريد يتكيف مع المناخ الجاف بتخزين المياه في جذعه الضخم.</p>
+    </div>
+</div>
 
-        footer { background: var(--primary-color); color: white; text-align: center; padding: 20px; }
-    </style>
-</head>
-<body>
 
-    <header>
-        <h1>جزيرة سقطرى</h1>
-        <p>موطن شجرة دم الأخوين والتنوع البيئي الفريد الذي لا مثيل له في العالم</p>
-    </header>
-
-    <section id="nature">
-        <h2 class="section-title">عجائب الطبيعة السقطرية</h2>
-        <div class="nature-grid">
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Dracaena_cinnabari_at_Diksam_Plateau.jpg/800px-Dracaena_cinnabari_at_Diksam_Plateau.jpg" alt="دم الأخوين">
-                <div class="card-content">
-                    <h3>شجرة دم الأخوين</h3>
-                    <p>أيقونة الجزيرة، تتميز بشكلها المظلي المقلوب وسائلها الأحمر الذي استخدم منذ القدم في الطب والصباغة.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1590523741877-29a3a5df0e5a?auto=format&fit=crop&w=800&q=80" alt="شواطئ قلنسية">
-                <div class="card-content">
-                    <h3>شواطئ قلنسية</h3>
-                    <p>تعتبر من أنقى الشواطئ في العالم، حيث تلتقي الرمال البيضاء الناعمة بمياه المحيط الفيروزية الصافية.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Adenium_obesum_socotranum.jpg/800px-Adenium_obesum_socotranum.jpg" alt="شجرة زجاجة الصحراء">
-                <div class="card-content">
-                    <h3>شجرة زجاجة الصحراء</h3>
-                    <p>نبات فريد يتكيف مع المناخ الجاف بتخزين المياه في جذعه الضخم، ويزهر وروداً وردية فاتنة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>تم تطويره بكل حب لعشاق الطبيعة - 2026</p>
-    </footer>
-
-</body>
-</html>
+    
